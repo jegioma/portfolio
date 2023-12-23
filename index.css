@@ -22,15 +22,6 @@ body {
     margin: 0;
     padding: 0;
 }
-body::-webkit-scrollbar {
-    width: 0.25rem;
-}
-body::-webkit-scrollbar-track {
-    background: var(--bg-third);
-}
-body::-webkit-scrollbar-thumb {
-    background: var(--bg-secondary);
-}
 
 
 /*Styling for nav bar*/
@@ -170,11 +161,13 @@ a[title]:hover::after {
 
 
 /*small screens*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 375px) {
     .nav-bar {
         top: 0;
         width: 100vw;
-        height: 5rem;
+        padding: 0;
+        height: 3rem;
+
     }
     .logo {
         display: none;
@@ -185,19 +178,37 @@ a[title]:hover::after {
     .nav-link {
         justify-content: center;
     }
-    
+    .nav-item:last-child {
+        margin-top: 0;
+    }
+    .nav-link svg {
+        width: 1.5rem;
+        margin: 0 1.5rem;
+    }
+
     body {
         padding-top: 5rem;
+
     }
 
     main {
         margin: 0;
     }
-    
+    .containers {
+        width: 70%;
+        margin: auto;
+    }
+    .main-headings {
+        font-size: 1.5rem;
+    }
+    .main-text {
+        font-size: 1rem;
+    }
     footer {
-        bottom: 40;
+        bottom: 0;
         margin-left: 0;
         width: 100%;
+        height: 0.5rem;
     }
     .footer-name {
         display: none;
