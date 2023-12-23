@@ -1,0 +1,227 @@
+/*Root Styling */
+:root {
+    font-size: 16px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #09153F;
+    --bg-secondary: #ADBCE0;
+    --bg-third: #1C6BA2;
+    --transition-speed: 600ms;
+}
+html {
+   background: var(--bg-primary);
+}
+
+
+/*Styling for the body*/
+body {
+    background: url('/images//halo.webp') center/cover no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+    background: var(--bg-third);
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--bg-secondary);
+}
+
+
+/*Styling for nav bar*/
+.nav-bar {
+    position: fixed;
+    background: var(--bg-secondary);
+    transition: width 200ms ease;
+}
+.nav-bar:hover .logo-text {
+    padding-left: 1rem;
+}
+.nav-bar:hover .logo {
+    background: var(--bg-third);
+}
+.nav-bar:hover .logo .fa-secondary {
+    color: var(--bg-primary);
+}
+.nav-bar:hover .logo svg {
+    transform: rotate(-180deg);
+}
+
+.navBar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: var(--transition-speed);
+}
+.nav-link svg {
+    width: 2rem;
+    margin: 0 1.5rem;
+}
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-third);
+    color: var(--text-secondary);
+}
+.nav-link:hover .fa-secondary {
+    color: var(--bg-secondary);
+}
+
+.link-text {
+    display: none;
+    margin-left: 0 1.5rem;
+}
+
+.fa-secondary {
+    color: var(--bg-third);
+}
+.fa-primary, .fa-secondary {
+    transition: var(--transition-speed);
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.3rem;
+    letter-spacing: 0.2ch;
+    width: 100%;
+}
+.logo svg {
+    transform: rotate(0deg);
+    transition: transform var(--transition-speed);
+}
+
+
+/*Styling for the main*/
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+    min-height: 100vh;
+}
+.containers {
+    border: #ADBCE0 solid 3px;
+    padding: 0 3rem;
+    margin: auto;
+    margin-bottom: 5rem;
+    width: 80%;
+    border-radius: 30px;
+    background: var(--bg-primary);
+}
+.main-headings {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.2ch;
+    font-size: 3rem;
+}
+.main-text {
+    color: #fff;
+    text-wrap: wrap;
+}
+
+
+/*Styling for the footer*/
+footer {
+    bottom: 0;
+    margin-left: 5rem;
+    background-color: var(--bg-primary);
+}
+.footer-name {
+    color: var(--text-secondary);
+    margin-left: 1rem;
+    padding: 0.5rem;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+.icon-container {
+    display: flex;
+}
+a[title]:hover::after {
+    opacity: 1;
+}
+
+
+/*small screens*/
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+        top: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+    .logo {
+        display: none;
+    }
+    .navBar-nav {
+        flex-direction: row;
+    }
+    .nav-link {
+        justify-content: center;
+    }
+    
+    body {
+        padding-top: 5rem;
+    }
+
+    main {
+        margin: 0;
+    }
+    
+    footer {
+        bottom: 40;
+        margin-left: 0;
+        width: 100%;
+    }
+    .footer-name {
+        display: none;
+    }
+    .icon-container {
+        justify-content: center;
+        margin: auto;
+    }
+
+}
+/*large screens*/
+@media only screen and (min-width: 600px) {
+    .nav-bar {
+        width: 5rem;
+        height: 100vh;
+        top: 0;
+    }
+    .nav-bar:hover {
+        width: 16rem;
+        background: var(--bg-primary);
+
+    }
+    .nav-bar:hover .link-text {
+        display: inline;
+        transition: opacity var(--transition-speed);
+    }
+}
