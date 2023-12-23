@@ -161,7 +161,7 @@ a[title]:hover::after {
 
 
 /*small screens*/
-@media only screen and (min-width: 350px) and (max-width: 450px) {
+@media only screen and (min-width: 350px) and (max-width: 999px) {
     .nav-bar {
         top: 0;
         width: 100vw;
@@ -225,7 +225,7 @@ a[title]:hover::after {
 
 }
 /*large screens*/
-@media only screen and (min-width: 751px) {
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
     .nav-bar {
         width: 5rem;
         height: 100vh;
@@ -240,4 +240,20 @@ a[title]:hover::after {
         display: inline;
         transition: opacity var(--transition-speed);
     }
+}
+
+@media not all and (pointer: coarse) {
+    .nav-bar:hover {
+        width: 16rem;
+        background: var(--bg-primary);
+    }
+
+    .nav-bar:hover .link-text {
+        display: inline;
+        transition: opacity var(--transition-speed);
+    }
+}
+.touch-device .nav-bar {
+    width: 5rem;
+    background: var(--bg-secondary);
 }
