@@ -161,7 +161,7 @@ a[title]:hover::after {
 
 
 /*small screens*/
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 350px) and (max-width: 450px) {
     .nav-bar {
         top: 0;
         width: 100vw;
@@ -225,7 +225,7 @@ a[title]:hover::after {
 
 }
 /*large screens*/
-@media only screen and (max-width: 1280px) {
+@media only screen and (min-width: 751px) {
     .nav-bar {
         width: 5rem;
         height: 100vh;
