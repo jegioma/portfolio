@@ -4,166 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/alien.png">
     <link rel="stylesheet" href="index.css">
     <title>Jeancarlo Masciotti</title>
 </head>
 
 <body>
-    <nav class="nav-bar">
-        <ul class="navBar-nav">
-            <li class="logo">
-                <a href="#" class="nav-link">
-                    <span class="link-text logo-text">Jeancarlo</span>
-                    <svg 
-                        aria-hidden="true"
-                        focusable-="true"
-                        data-prefix="fad"
-                        data-icon="arrow"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 512 512">
-                        <g class="fa-group">
-                            <path fill="currentColor" class="fa-primary" d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/>                    
-                            <path fill="currentColor" class="fa-secondary" d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/>                    
-
-                        </g>
-                    </svg>
-                </a>
-            </li>
-            <!-- <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <svg 
-                        aria-hidden="true"
-                        focusable-="true"
-                        data-prefix="fad"
-                        data-icon="home"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 575 512">
-                        <g class="fa-group">
-                            <path fill="currentColor" class="fa-primary" d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
-                            <path fill="currentColor" class="fa-secondary" d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
-                        </g>
-                    </svg>
-                    <span class="link-text">Home</span>
-                </a>
-            </li> -->
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <svg 
-                        aria-hidden="true"
-                        focusable-="true"
-                        data-prefix="fad"
-                        data-icon="aboutMe"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 575 512">
-                        <g class="fa-group">
-                            <path fill="currentColor" class="fa-primary" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
-                            <path fill="currentColor" class="fa-secondary" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
-                        </g>
-                    </svg>
-                    <span class="link-text">About Me</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <svg 
-                        aria-hidden="true"
-                        focusable-="true"
-                        data-prefix="fad"
-                        data-icon="frameworks"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 575 512">
-                        <g class="fa-group">
-                            <path fill="currentColor" class="fa-primary" d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4h54.1l109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109V104c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7H352c-8.8 0-16-7.2-16-16V102.6c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/>                        
-                            <path fill="currentColor" class="fa-secondary" d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4h54.1l109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109V104c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7H352c-8.8 0-16-7.2-16-16V102.6c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/>                        
-                        </g>
-                </svg>
-                <span class="link-text">Technologies</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <svg 
-                        aria-hidden="true"
-                        focusable-="true"
-                        data-prefix="fad"
-                        data-icon="projects"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 575 512">
-                        <g class="fa-group">
-                            <path fill="currentColor" class="fa-primary" d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z"/>                        
-                            <path fill="currentColor" class="fa-secondary" d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z"/>                        
-                        </g>
-                    </svg>
-                    <span class="link-text">Projects</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <svg 
-                        aria-hidden="true"
-                        focusable-="true"
-                        data-prefix="fad"
-                        data-icon="contact"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 575 512">
-                        <g class="fa-group">
-                            <path fill="currentColor" class="fa-primary" d="M96 0C60.7 0 32 28.7 32 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H96zM208 288h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V80zM496 192c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm16 144c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V336z"/>
-                            <path fill="currentColor" class="fa-secondary" d="M96 0C60.7 0 32 28.7 32 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H96zM208 288h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V80zM496 192c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm16 144c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V336z"/>
-                        </g>
-                    </svg>
-                    <span class="link-text">Contact</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <svg 
-                        aria-hidden="true"
-                        focusable-="true"
-                        data-prefix="fad"
-                        data-icon="theme"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg" 
-                        viewBox="0 0 575 512">
-                        <g class="fa-group">
-                            <path fill="currentColor" class="fa-primary" d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/>
-                            <path fill="currentColor" class="fa-secondary" d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/>
-                        </g>
-                    </svg>
-                    <span class="link-text">Theme</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+    <header class="header">
+        <img src="/images/masterchief.png" class="logo" alt="alien-logo"/>
+        <nav class="nav-bar">
+            <a class="links" href="#">Home</a>
+            <a class="links" href="#technologies">Skills</a>
+            <a class="links" href="#projects">Projects</a>
+            <a class="links" href="#contact">Contact</a>
+        </nav>
+    </header>
     <main>
-        <div id="home" class="containers">
-            <h1 class="main-headings">Jeancarlo Masciotti</h1>
-            <h2 class="main-text">I am a Software Development graduate looking to break into the industry with passion as a full stack web developer.</h2>
-        </div>
-
-        <div id="aboutMe" class="containers">
-            <h1 class="main-headings">about me</h1>
-        </div>
-        <div id="technologies" class="containers">
+        <script>
+            window.onload = function() {
+                clearForm();
+            };
+        
+            function clearForm() {
+                document.getElementById("contact-form").reset();
+                console.log("Script ran");
+            }
+        </script>
+        <section id="home" class="containers">
+            <div id="section1">
+                <img id="profile-image" src="/images/profile.png" alt="Profile Image">
+            </div>
+            <div id="section2">
+                <h1 class="main-headings">Jeancarlo Masciotti</h1>
+                <h2 class="main-text">I am a Software Development student aspiring to transition into the industry as a full-stack web developer. 
+                    My coursework, involving various technologies, has uncovered a profound interest in web development. 
+                    The continuous exploration of new technologies, fostering creativity, and solving complex problems fuel my enduring journey of learning in this dynamic field.
+                    Beyond coding, I find joy engaging in workouts and going on runs with my German Shepherd. 
+                    Additionally, I indulge in various forms of gaming, including trading cards, video games, and board games.
+                    </h2>
+            </div>
+        </section>
+        <section id="technologies" class="containers">
             <h1 class="main-headings">technologies</h1>
-        </div>
-        <div id="projects" class="containers">
+            <h2 class="type-text">Frontend:</h2>
+            <div class="tech-display">
+                <div class="list-item"><img class="list-img" src="/assets/logos/html.svg" alt="HTML" /><p class="list-text">HTML</p></div>
+                <div class="list-item"><img class="list-img" src="/assets/logos/css.svg" alt="CSS" /><p class="list-text">CSS</p></div>
+                <div class="list-item"><img class="list-img" src="/assets/logos/javascript.svg" alt="Javascript" /><p class="list-text">Javascript</p></div>
+                <div class="list-item"><img class="list-img" src="/assets/logos/react.svg" alt="React" /><p class="list-text">React</p></div>
+                <div class="list-item"><img class="list-img" src="/assets/logos/nextjs.svg" alt="Next.js" /><p class="list-text">Next.js</p></div>
+                <div class="list-item"><img class="list-img" src="/assets/logos/chakraui.svg" alt="Chakra-UI" /><p class="list-text">Chakra-UI</p></div>
+                <div class="list-item"><img class="list-img" src="/assets/logos/java.svg" alt="Java" /><p class="list-text">Java</p></div>
+                <div class="list-item"><img class="list-img" src="/assets/logos/scenebuilder.svg" alt="Scenebuilder" /><p class="list-text">Scenebuilder</p></div>
+
+            </div>
+            <h2 class="type-text">Backend:</h2>
+            <div class="tech-display">
+                <div class="list-item"><img class="list-img" src="/assets/logos/nodejs.svg" alt="Node JS" /><p class="list-text">Node JS</p></div>
+                <div class="list-item"><img class="list-img" src="/assets/logos/firebase.svg" alt="Firebase" /><p class="list-text">Firebase</p></div>
+                <div class="list-item"><img class="list-img" src="/assets/logos/supabase.svg" alt="Supabase" /><p class="list-text">Supabase</p></div>
+                <div class="list-item"><img class="list-img" src="/assets/logos/postgresql.svg" alt="PostgreSQL" /><p class="list-text">PostgreSQL</p></div>
+            </div>
+        </section>
+        <section id="projects" class="containers">
             <h1 class="main-headings">projects</h1>
-        </div>
-        <div id="contact" class="containers">
+            <div class="project-item">
+                <div class="card-text">
+                    <h2>DeckVault</h2>
+                    <h3>Built With - Next.js, Chakra-UI, Supabase</h3>
+                    <p>The app uses the offical <a class="resource-links" href="https://ygoprodeck.com/api-guide/" target="_blank" >Yu-Gi-Oh API</a> to search for cards throught the database. 
+                        Users can also create an account where they can create different collections to organize all of their cards digitally.
+                    </p>
+                    <div class="button-group">
+                        <a href="https://www.deckvault.xyz" target="_blank">
+                            <button class="project-btn">Live Site</button>
+                        </a>
+                        <a href="https://github.com/jegioma/Deck_Vault" target="_blank">
+                            <button class="project-btn">Github Repo</button>
+                        </a>
+                    </div>
+                </div>
+                <img class="project-img" src="/assets/deckvauklt.png" alt="Deck Vault Landing Page" />            
+            </div>
+
+            <div class="project-item">
+                <div class="card-text">
+                    <h2>FlickerLog</h2>
+                    <h3>Built With - Next.js, Chakra-UI, Firebase</h3>
+                    <p>Search for any movies and tv-shows using a mix of <a class="resource-links" href="https://developer.themoviedb.org/docs/getting-started" target="_blank" >The Movie Database API (TMDB)</a> and <a class="resource-links" href="http://www.omdbapi.com" target="_blank" >The Open Movie Database API (OMDB)</a>.
+                        Get details for your searches and users with an account has the abliity to create WatchLists to keep track of all their favorite movies and shows to their liking. 
+                    </p>
+                    <div class="button-group">
+                        <a href="https://flicklog-980df.web.app" target="_blank">
+                            <button class="project-btn">Live Site</button>
+                        </a>
+                        <a href="https://github.com/jegioma/FlickerLog" target="_blank">
+                            <button class="project-btn">Github Repo</button>
+                        </a>
+                    </div>
+                </div>
+                <img class="project-img" src="/assets/flickerlog.png" alt="Deck Vault Landing Page" />            
+            </div>
+
+            <div class="project-item">
+                <div class="card-text">
+                    <h2>STEC-ResearchApp</h2>
+                    <h3>Built With - Angular, Express-JS, Node-JS, Firebase</h3>
+                    <p>The app's focus is to digitize the selection and application process for the school's STEC Research department.
+                        This gives students the ability to search for available projects and to sign up for them.
+                        This includes an admin dashboard for the STEC Coordinator for all forms and edit them to their needs.
+                    </p>
+                    <div class="button-group">
+                        
+                        <a href="https://github.com/jegioma/STEC_ResearchApp" target="_blank">
+                            <button class="project-btn">Github Repo</button>
+                        </a>
+                    </div>
+                </div>
+                <img class="project-img" src="/assets/stecresearch.png" alt="Deck Vault Landing Page" />            
+            </div>
+        </section>
+        <section id="contact" class="containers">
             <h1 class="main-headings">contact</h1>
-        </div>
+            <form id="contact-form" action="https://formspree.io/f/mwkgvaoo" method="POST">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <textarea name="message" id="message" cols="40" rows="5" placeholder="Message" required></textarea>
+
+                <button id="submit-btn" class="project-btn" type="submit">Send Message</button>
+            </form>
+        </section>
     
     </main>
     
     <footer>
         <div class="footer-container">
-            <h3 class="footer-name">Jeancarlo Masciotti</h3>
+            <h3 class="footer-name">&copy 2023 Jeancarlo Masciotti</h3>
             <div class="icon-container">
                 <a href="#" class="nav-link" title="Github">
                     <svg 
@@ -213,6 +191,6 @@
             </div>
         </div>
     </footer>
-</body>
 
+</body>
 </html>
