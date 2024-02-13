@@ -269,7 +269,6 @@ a[title]:hover::after {
         padding: 0;
     }
     .containers {
-        border: solid red 3px;
         margin: auto;
         width: 90%;
         height: auto;
@@ -297,26 +296,50 @@ a[title]:hover::after {
         font-size: 18px;
     }
 
-    #technologies {
-
-    }
+    /*Styling for tech section*/
     .type-text {
-
+        width: 100%;
+        margin: 0;
+        text-align: center;
     }
     .tech-display {
-
+        padding: 0px 20px;
+        display: block;
     }
     .list-item {
-
+        height: auto;
+        box-sizing: border-box;
+        padding: 0;
     }
     .list-img {
+        width: 50px;
+        height: 50px;
+        margin: auto;
+    }
+    .list-text {
+        display: none;
+    }
 
+    /*Styling for tech section*/
+    .project-item {
+        display: block;
+    }
+    .project-img {
+        width: 300px;
+        height: 150px;
+    }
+    .button-group {
+         display: block;
+    }
+    .project-btn {
+        width: 100%;
+        margin-bottom: 1rem;
     }
 
     /*Styling for header*/
     .header {
         height: 50px;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
     .logo {
         margin: 0;
@@ -347,11 +370,9 @@ a[title]:hover::after {
     }
 
     /*Styling for footer*/
-    footer {
-
-    }
     .footer-container {
         display: block;
+        margin-top: 5rem;
     }
     .footer-name {
         font-size: 16px;
