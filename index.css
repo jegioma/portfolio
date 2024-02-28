@@ -84,16 +84,25 @@ main {
 }
 
 #home {
-    display: block;
     height: 30rem;
+}
+.home-grouping {
+    border-radius: 30px;
+    border: solid var(--text-secondary) 1px;
+    background: var(--bg-primary);
+    display: block;
+    height: 20rem;
+    padding: 15px 0px;
+    margin-bottom: 3rem;
 }
 #section1 {
     float: left;
-    margin-top: 8rem;
+    margin-left: 3rem;
 }
 #section2 {
     width: 75%;
     float: right;
+    margin-right: 3rem;
 }
 .main-headings {
     color: #fff;
@@ -280,8 +289,11 @@ a[title]:hover::after {
         width: 100%;
     }
 
-    #home {
-        display: block;
+    
+    .home-grouping {
+        height: 100%;
+        padding: 5px 0;
+        border: none;
     }
     #section2 {
         width: 100%;
@@ -293,7 +305,7 @@ a[title]:hover::after {
         display: none;
     }
     .main-text {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     /*Styling for tech section*/
@@ -310,6 +322,9 @@ a[title]:hover::after {
         height: auto;
         box-sizing: border-box;
         padding: 0;
+    }
+    .tech-grouping {
+        border: none;
     }
     .list-img {
         width: 50px;
